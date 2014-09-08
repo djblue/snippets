@@ -1,0 +1,51 @@
+// reset default styles and provide common styles
+
+// no scrollbars please
+::-webkit-scrollbar
+{
+  width: 0 !important
+}
+
+.box-sizing()
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.text-right
+{
+  text-align: right;
+}
+
+.text-center
+{
+  text-align: center;
+}
+
+.border-radius ()
+{
+  border-radius: @default-radius;
+}
+
+.input
+{
+  display: block;
+  width: 100% !important;
+  padding: @input-padding;
+  .box-sizing();
+  .border-radius();
+  border: 1px @input-border-color solid;
+}
+
+.input:focus
+{
+  outline: none;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  .box-sizing();
+}

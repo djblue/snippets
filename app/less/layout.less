@@ -1,0 +1,35 @@
+/* app layout */
+#container
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  & > *
+  {
+    float: left;
+    height: 100%;
+    position: relative;
+  }
+
+  & > #list
+  {
+    width: 30%; 
+    background: @tab-strip-background;
+  }
+  & > #snippets
+  {
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 0 5px black;
+    z-index: 1000;
+    overflow-y: scroll;
+  }
+  & > #tags
+  {
+    width: 20%;
+    color: @white;
+    background: @tag-background;
+  }
+}

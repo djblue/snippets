@@ -1,0 +1,9 @@
+<div class="<%= snippet.get('state') %>">
+  <h1><%= snippet.get('title') %></h1>
+  <!-- list all the tags -->
+  <ul class="tags">
+  <% snippet.get('tags').forEach(function (tag) { %>
+    <li><%= tag %></li>
+  <% }) %>
+  </ul>
+</div>

@@ -1,0 +1,37 @@
+// buttons
+.btn(@color)
+{
+  .border-radius();
+  border: none;
+  outline: none;
+  color: @white;
+  padding: @input-padding 2*@input-padding;
+  cursor: pointer;
+  background: @color;
+  border-bottom: 2px darken(@color, 10%) solid;
+}
+.btn-active(@color)
+{
+  background: darken(@color,5%);
+  border-bottom: 2px darken(@color, 15%) solid;
+}
+
+.btn-grey { .btn(darken(@grey,50%)); }
+.btn-grey:active { .btn-active(darken(@grey, 50%)); }
+.btn-grey:hover { }
+
+.btn-blue { .btn(@blue); }
+.btn-blue:active { .btn-active(@blue); }
+.btn-blue:hover { }
+
+.btn-red { .btn(@red); }
+.btn-red:active { .btn-active(@red); }
+.btn-red:hover { }
+
+.btn-green { .btn(@green); }
+.btn-green:active { .btn-active(@green); }
+.btn-green:hover { }
+
+.btn-yellow { .btn(@yellow); }
+.btn-yellow:active { .btn-active(@yellow); }
+.btn-yellow:hover { }
